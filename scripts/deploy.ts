@@ -1,4 +1,3 @@
-import { Address } from "cluster";
 import { ethers } from "hardhat";
 
 async function main() {
@@ -8,7 +7,7 @@ async function main() {
   const marketInstance = await NFTBazaar.deploy(
     "0x80122a756DC6D24145069C6f87c144bdb4c52C7E", 
     "0x7993D6fEfcC2C977E32Becb0ea621c44b4627e17", 
-    "0x2E234e70F8F2735e7cc30209F9dB00CF29D7ddDA"
+    "0xDFfB1FBB865ABFaaBf35234485F535D70a364C4c"
   );
  
   await marketInstance.deployed();
