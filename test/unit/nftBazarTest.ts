@@ -300,7 +300,6 @@ describe("NumberCollectible NFTs", function () {
     });
 
     it("Should revert if auction time not reached", async function() {
-      const balance20 = ethers.utils.formatUnits(await t20.balanceOf(owner.address), "wei");
       await marketInstance.createItem1155("newuri", owner.address, [0], [1]);
       await t1155.setApprovalForAll(marketInstance.address, true);
       await marketInstance.listItemOnAuction(t1155.address, 0, 100);
